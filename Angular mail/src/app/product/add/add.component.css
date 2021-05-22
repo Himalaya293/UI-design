@@ -1,0 +1,26 @@
+.invalid-error {
+    color: red;
+}
+
+.table {
+    width: 100%;
+}
+
+.tr {
+    width: 100%;
+}
+
+.td {
+    width: 100%;
+}
+
+.hrl {
+    background-color: #eee;
+}
+
+.right {
+    position: absolute;
+    float: right;
+    right: 50px;
+    text-align: left;
+}

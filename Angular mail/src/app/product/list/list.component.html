@@ -1,0 +1,18 @@
+<div class="row content">
+    <div class="col-sm-12">
+        <table class="table table-striped">
+            <thead>
+                <tr class="tr">
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products | async; index as i" class="tr">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.code }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<a href="#" routerLink="add" class="btn btn-link float-right action-label">Compose Mail</a>

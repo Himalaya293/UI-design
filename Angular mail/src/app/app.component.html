@@ -1,0 +1,109 @@
+<div class="body">
+    <a href="#" routerLink="add" class="btn btn-success button" id="compose-button">Compose Mail</a><br>
+    <div class="container" style="font-size: 16px;">
+        <p style="font-size: 16px;">FOLDERS</p>
+        <div class="folders">
+            <div class="row ">
+                <span class="border-bottom" style="padding:2px;"><i class="fa fa-inbox">&nbsp;&nbsp;Inbox</i> </span>
+            </div>
+            <div class="row">
+                <span class="border-bottom" style="padding:2px;"><i class="fa fa-envelope">&nbsp;&nbsp;SendMail</i></span>
+            </div>
+            <div class="row">
+                <span class="border-bottom" style="padding:2px;"><i class="fa fa-certificate">&nbsp;&nbsp;Important</i></span>
+            </div>
+            <div class="row">
+                <span class="border-bottom" style="padding:2px;"><i class="fa fa-file-text-o">&nbsp;&nbsp;Drafts</i></span>
+            </div>
+            <div class="row">
+                <span class="border-bottom" style="padding:2px;"><i class="fa fa-trash">&nbsp;&nbsp;Trash</i></span>
+            </div>
+        </div>
+        <p style="font-size: 16px;">CATEGORIES</p>
+        <div class="categories">
+            <div class="row">
+                <div class="col-sm-2"><span><div class="circle" style="background:green;"></div></span>
+                    <p>&nbsp;&nbsp;Work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:red;"></div></span>
+                    <p>&nbsp;&nbsp;Documents</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:brown;"></div></span>
+                    <p>&nbsp;&nbsp;Social</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background: blue;"></div></span>
+                    <p>&nbsp;&nbsp;Advertising</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:orange;"></div></span>
+                    <p>&nbsp;&nbsp;Clients</p>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 16px;">LABELS</p>
+        <div class="">
+            <div class="row">
+                <div class="col-sm-3" style="font-size:13px;width:100%;height:40px">
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag " > </i>Family</button>&nbsp;
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag" > </i>Work</button>&nbsp;
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag" ></i>Home</button>&nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3" style="font-size:13px;width:100%;height:40px">
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag" ></i>Children</button>&nbsp;
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag" ></i> Holidays</button>&nbsp;
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag" ></i>Music</button>&nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3" style="font-size:13px;">
+                    <button class="tags border px-2 py-1"><i class="fa fa-tag" ></i>
+                Photography</button>&nbsp;
+                    <button class="tags  border px-2 py-1"><i class="fa fa-tag" ></i>
+                    Film</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box"><br>
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="left">Inbox(16)</h6><br>
+        </div>
+        <input class="searchright" id="text" type="text" name="search" placeholder="  Search email"><button id="searchbutton" class="searchright">Search</button>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="left">
+                <button style="font-size:13px;background:white;border: 1px solid;border-radius: 4px;"><i class="glyphicon glyphicon-refresh" style="font-size:10px;background:white;"></i> Refresh</button>
+                <button style="font-size:13px;background:white;border: 1px solid;border-radius: 4px;"><i class="fa fa-eye" ></i> </button>
+                <button style="font-size:13px;background:white;border: 1px solid;border-radius: 4px;"><i class="fa fa-exclamation" ></i> </button>
+                <button style="font-size:13px;background:white;border: 1px solid;border-radius: 4px;"><i class="fa fa-trash-o" ></i> </button>
+            </div>
+            <div class="right">
+                <button style="font-size:13px;background:white;border: 1px solid"><i class="fa fa-arrow-left"></i></button>
+                <button style="font-size:13px;background:white;border: 1px solid"><i class="fa fa-arrow-right"></i></button>&nbsp;
+            </div>
+        </div>
+    </div>
+
+    <table class="table">
+        <tr></tr>
+        <div class="row content">
+            <div class="col-sm-12">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </table>
+
+
+</div>
