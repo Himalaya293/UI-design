@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <div class="all-tasks">
+        <ul data-lists style="padding-left: 1.5em;list-style-type: none;font-size: 13px;">
+            <script>
+                var txt = 'task-list';
+                obj = JSON.parse(txt);
+                document.getElementById("demo1").innerHTML = obj.task - list;
+            </script>
+        </ul>
+
+        <form action="" data-new-list-form>
+            <input type="text" class="new list" data-new-list-input placeholder="+ Add another list" aria-label="Add another list" />
+            <button class="btn create" aria-label="create new list"></button>
+        </form>
+    </div>
+    <br>
+    <div class="todo-list" data-list-display-container>
+        <div class="todo-header">
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count>Remaining Tasks</p>
+            <button class="btn delete" style="top: 0px;left: -10px;" data-clear-complete-tasks-button>...</button>
+        </div>
+        <div class="todo-body">
+            <ul data-tasks>
+                <script>
+                    var text = 'tasks';
+                    obj = JSON.parse(text);
+                    document.getElementById("demo").innerHTML = obj.tasks;
+                </script>
+            </ul>
+
+            <div class="new-task-creator">
+                <form action="" data-new-task-form>
+                    <input type="text" data-new-task-input class="new task" placeholder="Add another card" aria-label="+ Add another card" />
+                    <button class="btn create" aria-label="create new task">+</button>
+                </form>
+                <button class="btn delete" data-delete-list-button>...</button>
+            </div>
+            <div class="delete-stuff">
+            </div>
+        </div>
+    </div>
+    </div>
+    <template id="task-template">
+      <div class="task">
+        <input type="checkbox" />
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+      </div>
+    </template>
+</body>
+
+</html>

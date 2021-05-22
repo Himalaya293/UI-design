@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div>
+                    <button style="width:200px;text-align: left;" onclick="showCreateCardBox()">+ Add another list</button>
+                    <button onclick="delFlashcards()">Del Cards</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="create-card">
+                <h2 style="color: black;text-align: center;">Todo list</h2><br><br>
+                <label for="question"></label>
+                <input type="text" id="myInput" maxlength="280">
+                <button onclick="newElement()" class="addBtn">Add</button>
+
+                <ul id="myUL">
+                </ul>
+                <button onclick="addFlashcard()">Save</button> <button onclick="hideCreateCardBox()">Close</button>
+            </div>
+            <div class="flashcards"></div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background: #4169E1;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+
+/* Include the padding and border in an element's total width and height */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Remove margins and padding from the list */
+
+ul {
+    background-size: 50px;
+    background: #ebebf0;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Style the list items */
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    padding: 12px;
+    list-style-type: none;
+    background: white;
+    font-size: 10px;
+    transition: 0.2s;
+    width: 300px;
+    background: white;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+ul li:nth-child(odd) {
+    background: white;
+}
+
+
+/* Darker background-color on hover */
+
+ul li:hover {
+    background: #ebebf0;
+}
+
+
+/* Style the close button */
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+/* Style the header */
+
+.header {
+    background-color: #ebebf0;
+    padding: 10px;
+    color: #ebebf0;
+    text-align: center;
+    width: 350px;
+}
+
+
+/* Clear floats after the header */
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Style the input */
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 60%;
+    padding: 5px;
+    float: left;
+    font-size: 10px;
+    background-color: #ebebf0;
+}
+
+
+/* Style the "Add" button */
+
+.addBtn {
+    padding: 5px;
+    width: 15%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*/////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+button {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 0;
+    color: #fafafa;
+    float: right;
+    padding: 5px;
+    width: 15%;
+    color: #555;
+}
+
+.element-list {
+    height: 550px;
+}
+
+ul {
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+    border-radius: 3px;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+
+/*////////////////////////////////*/
+
+#newtask {
+    background-color: white;
+    padding: 10px;
+    color: green;
+    text-align: center;
+    width: 350px;
+    height: auto;
+}
+
+#newtask:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newtask input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 5px;
+    float: left;
+    font-size: 10px;
+}
+
+#newtask button {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 0;
+    color: #fafafa;
+    float: right;
+    padding: 5px;
+    width: 15%;
+    color: #555;
+}
+
+#tasks {
+    padding: 15px;
+}
+
+.task {
+    background: #fff;
+    padding: 5px;
+    border-radius: 0px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 2px solid #d1d3d4;
+}
+
+.task span {
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.task button {
+    border: none;
+    background: #19A68C;
+    width: 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}

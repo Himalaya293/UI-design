@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <ul id="myUL">
+            </ul>
+
+            <div id="myDIV" class="header">
+                <input type="text" id="myInput" style="font-size: 10px;" placeholder="+ Add Another Card">
+                <span onclick="newElement()" class="addBtn">+</span>
+            </div>
+        </div>
+        <div class="column">
+
+            <ul id="list">
+            </ul>
+            <div class="header">
+                <input id="add" type="text" placeholder="+ Add Another Card" style="font-size: 10px;">
+                <button id="btn">+</button>
+            </div>
+        </div>
+        <div class="column">
+            <div id="newtask">
+                <div id="tasks"></div>
+                <input type="text" placeholder="+ Add Another Card">
+                <button id="push">+</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

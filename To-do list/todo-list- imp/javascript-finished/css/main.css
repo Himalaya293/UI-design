@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+:root {
+    --clr-primary: #4169E1;
+    --clr-light: #f4f4f4;
+    --clr-dark: #333;
+    --clr-warning: rgb(99, 36, 36);
+}
+
+*,
+*::before,
+*::after {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background-color: #4169E1;
+    color: var(--clr-light);
+    display: grid;
+    grid: "header header header header" auto "...... lists  active ......" auto/1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+    width: 50%;
+    height: 0;
+}
+
+.title {
+    grid-area: header;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: calc(7vw + 2rem);
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    margin: -0.3em 0 0.5em;
+}
+
+.all-tasks {
+    align-content: start;
+}
+
+.task-list {
+    font-size: 12px;
+    line-height: 1.7;
+    list-style: circle;
+    padding-left: 1.5em;
+    list-style-type: none;
+}
+
+.list-name {
+    cursor: pointer;
+}
+
+.list-name:hover {
+    opacity: 0.7;
+}
+
+form {
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.btn.create {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-right: 0.25em;
+    color: #333;
+    transition: opacity 250ms ease-in;
+    position: relative;
+    top: -12px;
+    right: -20px;
+    color: ash;
+}
+
+.btn.create:hover {
+    opacity: 0.7;
+    color: #333;
+}
+
+.btn.delete {
+    opacity: 0.7;
+    font-size: 1rem;
+    transition: color 200ms;
+    float: right;
+    position: relative;
+    top: -30px;
+    left: -10px;
+}
+
+.btn.delete:hover {
+    color: var(--clr-warning);
+}
+
+.new {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    font-size: 10px;
+    outline: none;
+    padding: 0.25em;
+    transition: border-bottom 150ms ease-in;
+    order: 3;
+}
+
+.new::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+.new:-ms-input-placeholder {
+    opacity: 1;
+}
+
+.new::-ms-input-placeholder {
+    opacity: 1;
+}
+
+.new::placeholder {
+    opacity: 1;
+    color: white;
+}
+
+.new:focus {
+    border-bottom-width: none;
+}
+
+.new:focus::placeholder {
+    opacity: 1;
+    color: white;
+}
+
+.new.list {
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 1px solid #2962c2;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    background-color: #2962c2;
+}
+
+.new.task {
+    margin-bottom: 0;
+    border-bottom-style: hidden;
+    justify-content: space-between;
+    position: relative;
+    top: -12px;
+    right: -20px;
+    font-size: 13px;
+    color: #333;
+}
+
+.active-list {
+    font-weight: 700;
+}
+
+.todo-list {
+    --spacer: 1rem;
+    color: var(--clr-dark);
+    font-size: 12px;
+    width: 300px;
+    height: top;
+    position: relative;
+    top: -90px;
+    left: 10px;
+    padding: 15px;
+}
+
+.todo-header {
+    padding: 15px;
+    background-color: #ebebf0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10px;
+    font-size: 16px;
+}
+
+.list-title {
+    font-size: 16px;
+    background-color: #ebebf0;
+}
+
+.task-count {
+    margin: 0;
+    background-color: #ebebf0;
+    justify-content: space-between;
+}
+
+.todo-body {
+    padding: 1px;
+    background-color: #ebebf0;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.new-task-creator .create {
+    color: #333;
+    justify-content: space-between;
+}
+
+.new-task-creator input::placeholder {
+    color: #333;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.new-task-creator input::placeholder {
+    color: #333;
+}
+
+.new-task-creator input::placeholder {
+    /* Microsoft Edge */
+    color: #333;
+}
+
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.task label {
+    display: flex-inline;
+    align-items: center;
+    position: relative;
+}
+
+ul {
+    background: transparent;
+    padding: 10px;
+    width: 5px;
+}
+
+ul .task {
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    padding: 8px;
+    list-style-type: none;
+    background-color: white;
+    font-size: 12px;
+    transition: 0.2s;
+    width: 240px;
+    border-radius: 5px;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul .task :nth-child(odd) {
+    background: white;
+}
+
+ul .task :hover {
+    background: #f9f9f9;
+}
+
+.task::after {
+    content: "";
+    bottom: -0.5em;
+    background: currentColor;
+    opacity: 0.1;
+}
+
+.task:hover .custom-checkbox,
+[type="checkbox"]:focus+label .custom-checkbox {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: var(--clr-primary);
+}
+
+[type="checkbox"]:checked+label .custom-checkbox {
+    background: var(--clr-primary);
+    border-color: var(--clr-primary);
+    box-shadow: inset 0 0 0px 2px white;
+}
+
+[type="checkbox"]:checked+label {
+    opacity: 0.5;
+}
+
+.task label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    left: 1.5em;
+    top: 50%;
+    height: 3px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: -webkit-transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+[type="checkbox"]:checked+label::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+}
+
+.delete-stuff {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -35px;
+    color: var(--clr-dark);
+}

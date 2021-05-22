@@ -1,0 +1,117 @@
+.body {
+    background-color: #eee;
+    height: 50px;
+}
+
+.jumbotron {
+    height: 100px;
+    width: 25%;
+}
+
+.container {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+}
+
+.button {
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+}
+
+.col-sm-2>span,
+.col-sm-2>p {
+    display: inline-block;
+}
+
+.box {
+    position: absolute;
+    float: right;
+    align-items: center;
+    right: 32px;
+    top: 0px;
+    background-color: white;
+    height: 100%;
+    width: 880px;
+}
+
+.left {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    right: -15px;
+}
+
+.right {
+    position: relative;
+    float: right;
+    right: -430px;
+    text-align: left;
+}
+
+tr {
+    height: 45px;
+}
+
+.search {
+    font-size: 16px;
+    font-family: 'open Sans', sans-serif;
+    float: right;
+    margin-right: 4%;
+}
+
+#searchbutton {
+    height: 27px;
+    width: 60px;
+    background-color: hsl(167deg 100% 37%);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-family: 'open Sans', sans-serif;
+}
+
+.searchright {
+    position: absolute;
+    float: right;
+    right: 10px;
+}
+
+.br {
+    border-spacing: -1.5em;
+}
+
+.table {
+    width: 100%;
+    font-size: 12px;
+}
+
+.editbtn {
+    width: 15%;
+    height: 10%;
+    background-color: #FFA500;
+    color: white;
+}
+
+.edit {
+    width: 8%;
+    height: 8%;
+    background-color: #00FFFF;
+    border-radius: 0px;
+    color: white;
+}

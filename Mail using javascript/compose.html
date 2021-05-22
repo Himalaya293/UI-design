@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+
+<body class="body">
+
+    <div class="jumbotron">
+
+        <button class="btn btn-success button" style="background-color:hsl(167deg 100% 37%);" id="compose-button">Compose Mail</button>
+        <br><br>
+        <div class="container">
+            <p style="font-size: 13px;">FOLDERS</p>
+            <div class="row">
+                <div class="col-sm-2"><span><i class="fa fa-inbox"></i></span>
+                    <p style="font-size: 10px;">Inbox</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><i class="fa fa-envelope"></i></span>
+                    <p style="font-size: 10px;">Send Mail</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><i class="fa fa-certificate"></i></span>
+                    <p style="font-size: 10px;">Important</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><i class="fa fa-file-text-o"></i></span>
+                    <p style="font-size: 10px;">Drafts</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><i class="fa fa-trash"></i></span>
+                    <p style="font-size: 10px;">Trash</p>
+                </div>
+            </div>
+            <p style="font-size: 13px;">CATEGORIES</p>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:green;"></div></span>
+                    <p style="font-size: 10px;">Work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:red;"></div></span>
+                    <p style="font-size: 10px;">Documents</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:brown;"></div></span>
+                    <p style="font-size: 10px;">Social</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background: blue;"></div></span>
+                    <p style="font-size: 10px;">Advertising</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> <span><div class="circle" style="background:orange;"></div></span>
+                    <p style="font-size: 10px;">Clients</p>
+                </div>
+            </div>
+            <p style="font-size: 13px;">LABELS</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" > </i>
+                    Family</button>
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" > </i>
+                        Work</button>
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" ></i>
+                            Home</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" ></i>
+                    Children</button>
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" ></i>
+                        Holidays</button>
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" ></i>
+                            Music</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" ></i>
+                        Photography</button>
+                    <button class="tags bg-white border px-2 py-1"><i class="fa fa-tag" ></i>
+                            Film</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box" style="width: 880px;right: 10px;float: right;"><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 class="left">Inbox(16)</h6><br>
+            </div>
+            <input class="searchright" id="text" type="text" name="search" placeholder="  Search email"><button id="searchbutton" class="searchright">Search</button>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="left">
+                    <button style="font-size:10px;background:white;border-style:thin;"><i class="glyphicon glyphicon-refresh" style="font-size:10px;background:white;"></i> Refresh</button>
+                    <button style="font-size:10px;background:white;border-style:thin;"><i class="fa fa-eye" ></i> </button>
+                    <button style="font-size:10px;background:white;border-style:thin;"><i class="fa fa-exclamation" ></i> </button>
+                    <button style="font-size:10px;background:white;border-style:thin;"><i class="fa fa-trash-o" ></i> </button>
+                </div>
+                <div class="right">
+                    <button style="font-size:10px;background:white;border-style:thin;right:-100px;"><i class="fa fa-arrow-left"></i></button>
+                    <button style="font-size:10px;background:white;border-style:thin;"><i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <br><br>
+            <div class="modal-dialog modal-lg" style="width:880px;height: 100px;">
+                <div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        <h4 class="modal-title">Compose</h4>
+                    </div>
+                    <form method="post" class="contact-form" onsubmit="return sendEmail();">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="email" class="email form-control" id="compose-to" placeholder="To" required />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="sub form-control" id="compose-subject" placeholder="Subject" required />
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="compose-message" class="message form-control" placeholder="Message" rows="4" required></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" id="send-button" class="btn btn-primary" value="Send Email" onclick="sendEmail()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+        <script src="compose.js"></script>
+</body>
+
+</html>
