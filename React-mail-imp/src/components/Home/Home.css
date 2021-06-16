@@ -1,0 +1,195 @@
+.action__btn {
+    margin: 0 5px;
+}
+
+.create__btn {
+    margin: 10px 0;
+}
+
+.body {
+    background-color: #eee;
+    height: 750px;
+}
+
+.border-bottom {
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+.folders {
+    font-size: 16px !important;
+    font-weight: bold;
+    font-family: 'open Sans', sans-serif !important;
+}
+
+.categories {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 14%;
+    font-weight: 500;
+    margin-bottom: 1px;
+    color: black;
+}
+
+.labels {
+    display: grid;
+    position: relative;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.button {
+    background-color: hsl(167deg 100% 37%);
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+}
+
+.col-sm-2>span,
+.col-sm-2>p {
+    display: inline-block;
+}
+
+.box {
+    position: absolute;
+    float: center;
+    align-items: center;
+    right: 32px;
+    top: 0px;
+    background-color: white;
+    height: 100%;
+    width: 70%;
+}
+
+.left {
+    position: absolute;
+    float: left;
+    text-align: right;
+    font-size: 16px;
+    right: -15px;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+}
+
+.right {
+    position: relative;
+    float: left;
+    left: -50px;
+    text-align: left;
+}
+
+tr {
+    height: 55px;
+}
+
+.search {
+    font-size: 16px;
+    font-family: 'open Sans', sans-serif;
+    float: right;
+    margin-right: 5%;
+}
+
+#searchbutton {
+    float: right;
+    background-color: hsl(167deg 100% 37%);
+    color: white;
+    font-family: 'open Sans', sans-serif;
+    position: relative;
+}
+
+.row-margin-05 {
+    margin-top: 1.0em;
+}
+
+.searchright {
+    position: relative;
+    float: right;
+    right: 20px;
+    height: 33px;
+}
+
+.searchinput {
+    float: right;
+    height: 33px;
+}
+
+.table {
+    width: 100%;
+    font-size: 15px;
+}
+
+.editbtn {
+    width: 15%;
+    height: 10%;
+    background-color: #FFA500;
+    color: white;
+}
+
+.edit {
+    width: 8%;
+    height: 8%;
+    background-color: #00FFFF;
+    border-radius: 0px;
+    color: white;
+}
+
+#green {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #00bf96;
+    display: inline-block;
+}
+
+#red {
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f5315e;
+    display: inline-block;
+}
+
+#brown {
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #666666;
+    display: inline-block;
+}
+
+#blue {
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #00cbca;
+    display: inline-block;
+}
+
+#yellow {
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f9b44e;
+    display: inline-block;
+}

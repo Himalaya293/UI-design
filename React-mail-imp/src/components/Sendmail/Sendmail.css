@@ -1,0 +1,162 @@
+.body {
+    background-color: white;
+    height: 750px;
+}
+
+.border-bottom {
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+.folders {
+    display: grid;
+    position: relative;
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    top: -13px;
+    left: 5px;
+    height: 100px;
+}
+
+.categories {
+    display: grid;
+    row-gap: 0px;
+    position: relative;
+    padding: -90px;
+    font-size: 16px;
+    top: -5px;
+    left: 5px;
+}
+
+.labels {
+    display: grid;
+    position: relative;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.container {
+    background-color: #eee;
+    position: absolute;
+    display: block;
+    left: 0%;
+    top: 0px;
+    height: 750px;
+    text-align: justify;
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+    float: left;
+    padding: 0px;
+}
+
+.button {
+    background-color: hsl(167deg 100% 37%);
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+}
+
+.col-sm-2>span,
+.col-sm-2>p {
+    display: inline-block;
+}
+
+.b {
+    padding: 25px 50px 75px 100px;
+}
+
+.box {
+    position: absolute;
+    float: center;
+    align-items: center;
+    right: 30px;
+    top: 0px;
+    background-color: white;
+    height: 100%;
+    width: 70%;
+}
+
+.left {
+    position: relative;
+    float: left;
+    font-size: 28px;
+    font-weight: 200;
+    right: -15px;
+    border: 1px transparent;
+    width: 10px;
+    column-gap: 100px;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+}
+
+.right {
+    position: absolute;
+    float: right;
+    right: -550px;
+    text-align: left;
+}
+
+tr {
+    height: 55px;
+}
+
+.search {
+    font-size: 16px;
+    font-family: 'open Sans', sans-serif;
+    float: right;
+    margin-right: 5%;
+}
+
+#searchbutton {
+    height: 33px;
+    width: 60px;
+    background-color: hsl(167deg 100% 37%);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-family: 'open Sans', sans-serif;
+}
+
+.searchright {
+    position: absolute;
+    float: right;
+    right: 20px;
+    width: 270px;
+    height: 33px;
+}
+
+.table {
+    width: 100%;
+    font-size: 15px;
+}
+
+.editbtn {
+    width: 15%;
+    height: 10%;
+    background-color: #FFA500;
+    color: white;
+}
+
+.edit {
+    width: 8%;
+    height: 8%;
+    background-color: #00FFFF;
+    border-radius: 0px;
+    color: white;
+}

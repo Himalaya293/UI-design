@@ -1,0 +1,23 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    background-color: #4169E1;
+}
+
+.todo-list-creation-button {
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 1%;
+    width: 20%;
+    outline: none;
+    top: -10px;
+    font-weight: bold;
+    float: right;
+    font-size: 13px;
+}
+
+.todo-list-creation-button:hover {
+    background-color: whitesmoke;
+}
